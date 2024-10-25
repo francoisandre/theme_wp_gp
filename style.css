@@ -2,7 +2,7 @@
 Theme Name: IllustratrFA
 Theme URI: https://wordpress.com/themes/illustratr/
 Description: A minimalist portfolio theme.
-Version: 0.0.2
+Version: 0.0.3
 Author: FA (fork from Illustratr for strictly private use)
 Author URI: https://wordpress.com/themes/
 License: GNU General Public License v2 or later
@@ -460,7 +460,7 @@ input[type="submit"] {
   border: 1px solid #464d4d;
   color: white;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 900;
   cursor: pointer;
   /* Improves usability and consistency of cursor style between image-type 'input' and others */
   -webkit-appearance: button;
@@ -1144,7 +1144,7 @@ body {
   margin-bottom: 10px;
   font-size: 3.6em;
   line-height: 1.1;
-  font-weight: 900;
+  font-weight: 400;
   text-transform: uppercase;
 }
 @media screen and (max-width: 767px) {
