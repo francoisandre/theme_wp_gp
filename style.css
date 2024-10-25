@@ -460,7 +460,7 @@ input[type="submit"] {
   border: 1px solid #464d4d;
   color: white;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 400;
   cursor: pointer;
   /* Improves usability and consistency of cursor style between image-type 'input' and others */
   -webkit-appearance: button;
