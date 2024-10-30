@@ -9,7 +9,6 @@
 ?>
 
 	</div><!-- #content -->
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-area clear">
 			<?php
@@ -25,7 +24,6 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 				}
 			?>
 			<div class="site-info">
-			xxxxxxxxxxxxxxxxxxxxxxxx
 				<span class="sep"> | </span>
 				<?php printf( __( 'Theme: %1$s by %2$s.', 'illustratr' ), 'Illustratr', '<a href="http://wordpress.com/themes/illustratr/" rel="designer">WordPress.com</a>' ); ?>
 			</div><!-- .site-info -->

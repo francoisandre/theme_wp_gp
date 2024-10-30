@@ -6,31 +6,29 @@
 $format = get_post_format();
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<span>
 
 	<?php if ( '' != get_the_post_thumbnail() && '' == $format ) : ?>
-		<div class="entry-thumbnail">
-			<?php if ( ! is_single() ) : ?>
-			<a href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail( 'illustratr-featured-image' ); ?>
-			</a>
-			<?php else : ?>
-				<?php  ?>
-			<?php endif; ?>
-		</div><!-- .entry-thumbnail -->
+
+		<?php if ( ! is_single() ) : ?>
+		<span class="photo-post" link="<?php the_permalink(); ?>" excerpt="<?php the_excerpt();?>" title="<?php the_title(); ?>"  image="<?php the_post_thumbnail_url(); ?>" ></span>		
+		<?php endif; ?>
 	<?php endif; ?>
+	<?php if (is_single() ) : ?>
 	<header class="entry-header">
+	<?php endif; ?>
 		<?php
 			if ( is_single() ) {
 				the_title( '<h1 class="entry-title">', '</h1>' );
-			} else {
-				the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
-			}
+			} 
 		?>
+		<?php if ( is_single() ) : ?>
 		<span class="entry-title-location">
 		<?php the_excerpt(); ?>
 		</span>
-		<?php
+		<?php endif; ?>
+		
+		<!--<?php
 			/* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list( __( ', ', 'illustratr' ) );
 			if ( 'post' == get_post_type() && $categories_list && illustratr_categorized_blog() ) :
@@ -42,8 +40,12 @@ $format = get_post_format();
 			if ( 'jetpack-portfolio' == get_post_type() ) {
 				echo get_the_term_list( $post->ID, 'jetpack-portfolio-type', '<span class="portfolio-entry-meta">', _x(', ', 'Used between list items, there is a space after the comma.', 'illustratr' ), '</span>' );
 			}
-		?>
+		?>-->
+	
+	
+	<?php if (is_single() ) : ?>
 	</header><!-- .entry-header -->
+	<?php endif; ?>
 
 	<?php if ( 'jetpack-portfolio' != get_post_type() ) : // Don't display Content for Portfolio ?>
 		<?php if ( is_single() ) : // Only display Excerpts for Search ?>
@@ -67,7 +69,7 @@ $format = get_post_format();
 		}
 	?>
 
-	<?php if ( 'jetpack-portfolio' != get_post_type() ) : // Don't display entry-meta for Portfolio ?>
+	<?php if ( is_single() ) : // Don't display entry-meta for Portfolio ?>
 		<footer class="entry-meta">
 			<?php if ( 'post' == get_post_type() ) : // Hide post meta for pages on Search ?>
 
@@ -84,7 +86,7 @@ $format = get_post_format();
 				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'illustratr' ), __( '1 Comment', 'illustratr' ), __( '% Comments', 'illustratr' ) ); ?></span>
 			<?php endif; ?>
 
-			<?php edit_post_link( __( 'Edit', 'illustratr' ), '<span class="edit-link">', '</span>' ); ?>
+			
 		</footer><!-- .entry-meta -->
 	<?php endif; ?>
-</article><!-- #post-## -->
+</span><!-- #post-## -->
