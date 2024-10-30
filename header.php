@@ -16,6 +16,7 @@
 
 <script src="https://api.sedoo.fr/aeris-cdn-rest/jsrepo/v1_0/download/sandbox/release/perso-photogallery-vjs/0.1.0"></script>
 
+xxxxx
 
 <?php wp_head(); ?>
 </head>

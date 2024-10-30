@@ -9,7 +9,7 @@
 ?>
 
 	</div><!-- #content -->
-
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-area clear">
 			<?php
@@ -25,7 +25,7 @@
 				}
 			?>
 			<div class="site-info">
-				<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'illustratr' ), 'WordPress' ); ?></a>
+			xxxxxxxxxxxxxxxxxxxxxxxx
 				<span class="sep"> | </span>
 				<?php printf( __( 'Theme: %1$s by %2$s.', 'illustratr' ), 'Illustratr', '<a href="http://wordpress.com/themes/illustratr/" rel="designer">WordPress.com</a>' ); ?>
 			</div><!-- .site-info -->
