@@ -933,7 +933,7 @@ Layout
 --------------------------------------------------------------*/
 body {
   padding: 20px;
-  background: #24282d;
+  #background: #24282d;
 }
 @media screen and (min-width: 960px) {
   body.body-borders:before,
