@@ -25,7 +25,6 @@
 			?>
 			<div class="site-info">
 				<span class="sep"> | </span>
-				<?php printf( __( 'Theme: %1$s by %2$s.', 'illustratr' ), 'Illustratr', '<a href="http://wordpress.com/themes/illustratr/" rel="designer">WordPress.com</a>' ); ?>
 			</div><!-- .site-info -->
 		</div><!-- .footer-area -->
 	</footer><!-- #colophon -->
